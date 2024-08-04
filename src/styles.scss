@@ -18,9 +18,12 @@
   --dark: #11171f;
   --text-light: #b2c1db;
   --extra-light: #faf5ff;
-  --max-width:1200;
+  --max-width:1500;
 }
 
 body {
   font-family: 'Poppins', sans-serif ;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

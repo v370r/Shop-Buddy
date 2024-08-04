@@ -1,0 +1,39 @@
+.container {
+  margin-top: 20em;
+  // background-image: url('../../assets/logo.jpg');
+  background-size:contain;
+  display: flex;
+  justify-content: space-between; /* Space between the buttons */
+  align-items: center;
+  width: 50%; /* Adjust width as necessary */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+
+.button, .button-buddy {
+  margin-top: 10em;
+  padding: 1rem 3rem;
+  width: 20em;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button {
+  background-color: #007bff; /* Bootstrap primary color */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.button-buddy {
+  background-color: #c7c432; /* Custom color */
+}
+
+.button-buddy:hover {
+  background-color: #c4ee08; /* Darker shade for hover effect */
+}

@@ -10,13 +10,29 @@ body {
 }
 
 .login-container {
-  background-image: url('../../assets/logo.jpg');
+  // background-image: url('../../assets/logo.jpg');
+  background-size: contain;
+  background-repeat:repeat-x;
   justify-content: center;
   margin-top: 5em;
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100%;
+  // height: 100%;
+}
+
+.logo {
+  font-weight: bold;
+  color: #1770d6;
+  font-family: 'Times New Roman';
+  font-size: x-large;
+}
+
+.logo-sub {
+  font-weight: bold;
+  color: #d3e90b;
+  font-family: 'Times New Roman';
+  font-size: x-large;
 }
 
 .login-form {
@@ -47,7 +63,7 @@ input[type="password"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #aec9b5; /* Match background color */
-  color: aliceblue; /* Match text color */
+  color: rgb(15, 15, 15); /* Match text color */
 }
 
 button {
