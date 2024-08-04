@@ -1,8 +1,37 @@
-<div *ngIf="product">
-  <h1>Accepted & reply</h1>
-  <p>Name: {{ product.name }}</p>
-  <p>Product Type: {{ product.productType }}</p>
-  <p>Location: {{ product.location }}</p>
-  <p>Title: {{ product.title }}</p>
+<div *ngIf="product" class="product-container">
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title style="margin-bottom: 2em;">Accepted & Reply</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-form-field  class="full-width">
+          <mat-label class="bold-text">Name</mat-label>
+          <input matInput formControlName="name" [readonly]="true">
+        </mat-form-field>
+        <mat-form-field  class="full-width">
+          <mat-label class="bold-text">Product Type</mat-label>
+          <input matInput formControlName="productType" [readonly]="true">
+        </mat-form-field>
+        <mat-form-field  class="full-width">
+          <mat-label class="bold-text">Location</mat-label>
+          <input matInput formControlName="location" [readonly]="true">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label class="bold-text">Title</mat-label>
+          <input matInput formControlName="title" [readonly]="true">
+        </mat-form-field>
+
+
+        <mat-form-field appearance="outline"  class="full-width">
+          <mat-label>Message friend</mat-label>
+          <textarea matInput formControlName="message" placeholder="Enter body text"></textarea>
+        </mat-form-field>
+        </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" type="submit" [ngClass]="{ 'button-enabled': productForm.valid, 'button-disabled': !productForm.valid }">Submit</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
 </div>
-<p>friend-reply works!</p>
+

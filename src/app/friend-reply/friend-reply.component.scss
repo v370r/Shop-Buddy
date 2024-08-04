@@ -1,0 +1,43 @@
+.product-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+mat-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+}
+
+.friend-reply {
+  text-align: center;
+  color: #4CAF50; /* Adjust color as needed */
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+mat-label {
+  font-weight: bold;
+}
+
+.friend-reply {
+  text-align: center;
+  color: #4CAF50; /* Adjust color as needed */
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.button-enabled {
+  background-color: #4CAF50; /* Green */
+}
+
+.button-disabled {
+  background-color: #f44336; /* Red */
+}

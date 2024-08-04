@@ -19,6 +19,7 @@ import { HomeComponent } from './home/home.component';
 import { HelpFriendComponent } from './help-friend/help-friend.component';
 import { NeedHelpComponent } from './need-help/need-help.component';
 import { FriendReplyComponent } from './friend-reply/friend-reply.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,10 @@ import { FriendReplyComponent } from './friend-reply/friend-reply.component';
     MatButtonModule,
     MatTableModule,
     MatIconModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
     BrowserAnimationsModule
   ],
   providers: [],
